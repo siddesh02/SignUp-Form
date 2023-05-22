@@ -25,6 +25,9 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	</head>
 	<body>
 		<div class="container">
@@ -34,11 +37,13 @@
 						Get started with
 						<h2 id="GetStarted">our product</h2>
 					</h2>
-					<p class="TrialText">
+					<div class="TrialText">
 						There is a
 						<span class="p_highlight">Free 30 day trial</span>
-						waiting <p class="TrialText">for you, just enough timme to poke</p> <p class="TrialText">around our app.</p>
-					</p>
+						waiting
+						<p class="TrialText">for you, just enough timme to poke</p>
+						<p class="TrialText">around our app.</p>
+					</div>
 					<button class="btnDemo">
 						<i
 							class="fa fa-play-circle"
@@ -49,40 +54,42 @@
 			</div>
 			<div class="container2">
 				<div class="container2_1">
-					<h2 id="lblSignUp">SIGN UP</h2>
-					<input
-						class="inp_info fa1"
-						type="email"
-						name="email"
-						id="email"
-						placeholder="Email" />
-					<input
-						class="inp_info"
-						type="password"
-						name="pwd"
-						id="pwd"
-						placeholder="Password" />
-					<div class="chk_check">
+					<div class="container2_1_1">
+						<h2 id="lblSignUp">SIGN UP</h2>
 						<input
-							type="checkbox"
-							name="checkTnC"
-							id="checkTnC" />
-						<label
-							for="checkTnC"
-							id="lblTnC">
-							I agree with
-							<u><strong>Terms and Conditions.</strong></u>
-						</label>
-					</div>
-					<div class="btn_div">
-						<button
-							class="btn_submit"
-							type="submit">
-							Submit
-							<i
-								class="fa fa-arrow-right"
-								aria-hidden="true"></i>
-						</button>
+							class="inp_info fa1"
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Email" />
+						<input
+							class="inp_info"
+							type="password"
+							name="pwd"
+							id="pwd"
+							placeholder="Password" />
+						<div class="chk_check">
+							<input
+								type="checkbox"
+								name="checkTnC"
+								id="checkTnC" />
+							<label
+								for="checkTnC"
+								id="lblTnC">
+								I agree with
+								<u><strong>Terms and Conditions.</strong></u>
+							</label>
+						</div>
+						<div class="btn_div">
+							<button
+								class="btn_submit animate__headShake"
+								type="submit">
+								<span>Submit</span>
+								<i
+									class="fa fa-arrow-right"
+									aria-hidden="true"></i>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>

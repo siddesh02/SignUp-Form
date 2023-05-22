@@ -29,6 +29,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 50%;
+    flex-wrap: wrap;
 }
 
 .container1_1 {
@@ -38,7 +39,7 @@ body {
 
 #GetStarted {
     color: #233040;
-    font-size: 50px;
+    font-size: 3vw;
     font-family: 'Kanit', sans-serif;
     line-height: 14px;
 }
@@ -50,7 +51,7 @@ body {
 .TrialText {
     color: #666a6e;
     font-family: 'Kanit', sans-serif;
-    font-size:15px;
+    font-size:1vw;
     font-weight: 999;
     line-height: 8px;
     word-spacing: 1.4px;
@@ -58,12 +59,12 @@ body {
 
 .btnDemo {
     background-color: #6866FF;
-    width: 39%;
-    height: 13%;
+    width: 10vw;
+    height: 5vh;
     border: none;
     color: white;
     outline: none;
-    font-size: 15px;
+    font-size: 1vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
@@ -85,81 +86,99 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    flex-wrap: wrap;
     z-index: 1;
     box-shadow: -12px 12px 29px #898d92 ;
 }
 
+.container2_1_1 {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
 #lblSignUp {
     color: #233040;
-    font-size: 22px;
+    font-size: 150%;
     font-family: 'Kanit', sans-serif;
-    padding-right: 55%;
+    margin-bottom: 5vh;
 }
 
 .inp_info {
+    width: 100%;
+    height: 6vh;
     border:none;
     border-bottom-width: 100%;
     border-bottom-style: ridge;
-    width: 70%;
-    height: 10%;
-    font-size: 14px;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 .chk_check {
-    padding-top: 5%;
+    padding-top: 2.5vh;
     display: flex;
     align-items: center;
-    color: #6866FF;
 }
 
 #checkTnC {
     color: white;
-    background-color: #6866FF;
     transform: scale(1.1);
-    margin-inline-end: 12px;
-    margin-inline-start:-10%;
+    margin-inline-end: 1vw;
 }
 
 #lblTnC {
     color: #898d92;
     font-family: 'Kanit', sans-serif;
-    font-size: 15px;
+    font-size: 1.1vw;
 }
 
 .btn_div {
-    width: 70%;
-    height: 10%;
-    margin-top: 10%;
+    height: 12%;
+    margin-top: 15%;
     display: flex;
     justify-content: end;
 }
 
 .btn_submit {
     color: #6866FF;
-    width: 50%;
-    height: 90%;
+    width: 8vw;
     background-color: transparent;
     border: #6866FF solid 1.5px;
 }
 
+.btn_submit > span {
+    font-size: 1.1vw;
+    font-family: 'Kanit', sans-serif;
+    font-weight:550;
+}
+
 .inp_info:is(:focus, :active) {
     outline: none;
+    animation: slide 2s;
     border-bottom-color: #6866FF;
     border-bottom-style: ridge;
 }
 
 .btn_submit:is(:focus, :active) {
-    background-color: #6866FF;
+    animation: glow 1s;
     color: white;
+    animation-fill-mode: forwards;
+}
+
+/* animations */
+@keyframes glow {
+    100% {
+        background-color: #6866FF;
+    }
 }
 
 /* font awesome */
 .fa-arrow-right {
-    margin-left: 5px;
+    margin-left: 5%;
 }
 
 .fa-play-circle {
-    margin-right: 5px;
+    margin-right: 5%;
 }
 
