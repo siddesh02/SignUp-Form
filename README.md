@@ -1,8 +1,6 @@
-## SignUp-Form
-
 <p align="center">
-<img height="300px" width="580px" src="https://github.com/siddesh02/SignUp-Form/assets/92852926/9e93e4ac-4228-4ac2-ac73-fee708001661" alt="1"/>
-
+<img src="https://github.com/siddesh02/SignUp-Form/assets/92852926/78efabac-997d-4603-a9b3-f856c0381a79" width="600" height="281"/>
+</p>
 
 
 
